@@ -9,9 +9,6 @@
 # ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 
-# FROM centos:7
-# CMD   ["google.com"]
-# ENTRYPOINT ["ping", "-c3"]
-
 FROM centos:7
-ENTRYPOINT ["ping",]
+CMD   ["google.com"]
+ENTRYPOINT ["ping", "-c3"]
